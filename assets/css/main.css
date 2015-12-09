@@ -26,18 +26,20 @@ html {
 
 /*-----TITLE-----*/
 .title {
-    margin-top: 80px;
+  margin: 20px 20px 0 0;
 }
 
 a:hover {
   color: #FF5757 !important;
+  cursor: pointer;
 }
 
 .link {
+  cursor: none;
 	outline: none;
 	text-decoration: none;
 	position: relative;
-	font-size: 3em;
+	font-size: 1em;
 	line-height: 1;
 	color: #FFFFFF;
 	display: inline-block;
@@ -47,7 +49,7 @@ a:hover {
 	color: #FFFFFF;
 	font-family: 'Josefin Sans';
 	text-transform: uppercase;
-	font-size: 5em;
+	font-size: 2em;
 	overflow: hidden;
 	padding: 0 0 10px;
 }
@@ -59,7 +61,7 @@ a:hover {
 	height: 100%;
 	width: 100%;
 	border-width: 2px 0px;
-	border-color: #1C213E;
+	border-color: #3E4E8C;
 	border-style: solid;
 	left: 0;
 	-webkit-transform: translate3d(-101%,0,0);
@@ -83,7 +85,7 @@ a:hover {
 }
 
 .link--yaku:hover span {
-	color: #1C213E;
+	color: #3E4E8C;
 	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
 	transform: perspective(1000px) rotate3d(0,1,0,360deg);
 }
@@ -174,9 +176,39 @@ a:hover {
 
 
 /*-----DESCRIPTION-----*/
-.description {
+.description, .footer {
   font-family: 'Josefin Sans' !important;
   color: #6273A1;
+}
+
+.we-text {
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+}
+
+.product-text {
+  position: absolute;
+  left: 50%;
+  margin-right: -300px;
+}
+
+.revolving-word {
+  position: absolute;
+  left: 50%;
+  margin-left: -185px;
+}
+
+.revolving-word-build {
+  position: absolute;
+  left: 50%;
+  margin-left: -165px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .tagline {
