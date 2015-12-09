@@ -1,0 +1,190 @@
+/*-----GENERAL-----*/
+html {
+  background: black;
+  background-image: url("../img/bg/hk-night.jpg");
+}
+
+.emphasis-word-red {
+  color: #FF5757;
+}
+
+.emphasis-word-green {
+  color: #57FF8D;
+}
+
+.emphasis-word-blue {
+  color: #57FFF7;
+}
+
+
+/*-----BACKGROUND-----*/
+.site-bg__canvas {
+  height: 550px;
+  width: 100%;
+  position: absolute;
+}
+
+/*-----TITLE-----*/
+.title {
+    margin-top: 80px;
+}
+
+a:hover {
+  color: #FF5757 !important;
+}
+
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 3em;
+	line-height: 1;
+	color: #FFFFFF;
+	display: inline-block;
+}
+
+.link--yaku {
+	color: #FFFFFF;
+	font-family: 'Josefin Sans';
+	text-transform: uppercase;
+	font-size: 5em;
+	overflow: hidden;
+	padding: 0 0 10px;
+}
+
+.link--yaku::before {
+  margin-top: -5px;
+  content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-width: 2px 0px;
+	border-color: #1C213E;
+	border-style: solid;
+	left: 0;
+	-webkit-transform: translate3d(-101%,0,0);
+	transform: translate3d(-101%,0,0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.link--yaku:hover::before {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.link--yaku span {
+	display: inline-block;
+	position: relative;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
+	transition: transform 0.5s, color 0.5s;
+}
+
+.link--yaku:hover span {
+	color: #1C213E;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+	transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+
+.link--yaku span:nth-child(14),
+.link--yaku:hover span:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.link--yaku span:nth-child(13),
+.link--yaku:hover span:nth-child(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.0.5s;
+}
+
+.link--yaku span:nth-child(12),
+.link--yaku:hover span:nth-child(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.link--yaku span:nth-child(11),
+.link--yaku:hover span:nth-child(4) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+.link--yaku span:nth-child(10),
+.link--yaku:hover span:nth-child(5) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.link--yaku span:nth-child(9),
+.link--yaku:hover span:nth-child(6) {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.link--yaku span:nth-child(8),
+.link--yaku:hover span:nth-child(7) {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.link--yaku span:nth-child(7),
+.link--yaku:hover span:nth-child(8) {
+	-webkit-transition-delay: 0.35s;
+	transition-delay: 0.35s;
+}
+
+.link--yaku span:nth-child(6),
+.link--yaku:hover span:nth-child(9) {
+	-webkit-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.link--yaku span:nth-child(5),
+.link--yaku:hover span:nth-child(10) {
+	-webkit-transition-delay: 0.45s;
+	transition-delay: 0.45s;
+}
+
+.link--yaku span:nth-child(4),
+.link--yaku:hover span:nth-child(11) {
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.link--yaku span:nth-child(3),
+.link--yaku:hover span:nth-child(12) {
+	-webkit-transition-delay: 0.55s;
+	transition-delay: 0.55s;
+}
+
+.link--yaku span:nth-child(2),
+.link--yaku:hover span:nth-child(13) {
+	-webkit-transition-delay: 0.6s;
+	transition-delay: 0.6s;
+}
+
+.link--yaku span:first-child,
+.link--yaku:hover span:nth-child(14) {
+	-webkit-transition-delay: 0.65s;
+	transition-delay: 0.65s;
+}
+
+
+/*-----DESCRIPTION-----*/
+.description {
+  font-family: 'Josefin Sans' !important;
+  color: #6273A1;
+}
+
+.tagline {
+  font-size: 4em;
+  margin-top: 200px;
+}
+
+.ourselves-you {
+  font-size: 2em;
+  margin: -50px 0 0 250px;
+}
