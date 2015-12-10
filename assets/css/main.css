@@ -1,7 +1,18 @@
+/*
+----- DOCUMENT PROPERTIES -----
+red: #FF5757;
+green: #57FF8D;
+blue: #57FFF7;
+*/
+
 /*-----GENERAL-----*/
 html {
   background: black;
   background-image: url("../img/bg/hk-night.jpg");
+}
+
+.container {
+  background: none;
 }
 
 .emphasis-word-red {
@@ -179,44 +190,72 @@ a:hover {
 .description, .footer {
   font-family: 'Josefin Sans' !important;
   color: #6273A1;
-}
-
-.we-text {
-  position: absolute;
-  left: 50%;
-  margin-left: -300px;
-}
-
-.product-text {
-  position: absolute;
-  left: 50%;
-  margin-right: -300px;
-}
-
-.revolving-word {
-  position: absolute;
-  left: 50%;
-  margin-left: -185px;
-}
-
-.revolving-word-build {
-  position: absolute;
-  left: 50%;
-  margin-left: -165px;
+  font-size: 3em;
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   right: 0;
+  font-size: 1em;
 }
 
-.tagline {
-  font-size: 4em;
-  margin-top: 200px;
+.tagline-design {
+  margin-top: 50px;
+}
+
+.tagline-build, .tagline-launch {
+  margin-top: 140px;
+}
+
+.tagline-circle {
+  margin-top: -175px;
+}
+
+.tagline-line1{
+  margin: -130px 0 -155px 570px;
+}
+
+svg {
+  fill-opacity: 0;
+  stroke: #000;
+  stroke-width: 3;
+  stroke-dasharray: 870;
+  stroke-dashoffset: 870;
+  animation-name: show;
+  animation: draw;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.design-circle{
+  animation-delay: 0.5s;
+}
+
+.build-circle{
+  animation-delay: 1.5s;
+}
+
+.launch-circle{
+  animation-delay: 2.5s;
+}
+
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
 }
 
 .ourselves-you {
-  font-size: 2em;
+  font-size: 2em !important;
   margin: -50px 0 0 250px;
 }

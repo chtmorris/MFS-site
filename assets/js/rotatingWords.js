@@ -1,9 +1,7 @@
 $( document ).ready(function() {
-    $( ".build-word" ).hide();
-    $( ".launch-word" ).hide();
-    $( ".design-word" ).delay(2000).fadeOut();
-    $( ".build-word" ).delay(3000).fadeIn();
-    $( ".build-word" ).delay(2000).fadeOut();
-    $( ".launch-word" ).delay(6000).fadeIn();
-    $( ".tagline" ).delay(8000).fadeOut();
+  $( ".tagline-design, .tagline-build, .tagline-launch" ).css('opacity', '0.01');
+  $( ".tagline-design").delay(2000).fadeTo("slow", 1);
+  $( ".tagline-build").delay(3000).fadeTo("slow", 1);
+  $( ".tagline-launch").delay(4000).fadeTo("slow", 1);
+  $( ".description").delay(7000).fadeOut("slow");
 });
