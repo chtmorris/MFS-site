@@ -7,7 +7,7 @@ blue: #57FFF7;
 
 /*-----GENERAL-----*/
 html {
-  background: black;
+  background: #303030;
   background-image: url("../img/bg/hk-night.jpg");
 }
 
@@ -201,7 +201,7 @@ a:hover {
 }
 
 .tagline-design {
-  margin-top: 50px;
+  margin-top: 250px;
 }
 
 .tagline-build, .tagline-launch {
