@@ -8,7 +8,7 @@ blue: #57FFF7;
 /*-----GENERAL-----*/
 html {
   background: #303030;
-  background-image: url("../img/bg/hk-night.jpg");
+  background-image: url("../img/bg/hk-night-min.jpg");
 }
 
 .container {
@@ -37,7 +37,7 @@ html {
 
 /*-----TITLE-----*/
 .title {
-  margin: 20px 20px 0 0;
+  margin: 20px 20px 20px 20px;
 }
 
 a:hover {
@@ -185,6 +185,15 @@ a:hover {
 	transition-delay: 0.65s;
 }
 
+button.btn.btn-info{
+  margin-top: -105px;
+  padding: 10px 10px 7px 10px;
+  background: none;
+  color: #57FFF7;
+  border-color: #57FFF7;
+  font-size: 1.2em;
+  font-family: 'Josefin Sans' !important;
+}
 
 /*-----DESCRIPTION-----*/
 .description, .footer {
@@ -202,6 +211,7 @@ a:hover {
 
 .tagline-design {
   margin-top: 250px;
+  line-height: 1.2;
 }
 
 .tagline-build, .tagline-launch {
@@ -258,4 +268,33 @@ svg {
 .ourselves-you {
   font-size: 2em !important;
   margin: -50px 0 0 250px;
+}
+
+/*-----APP ICONS-----*/
+
+.app-icons{
+  margin-top: 100px;
+  position:absolute;
+  bottom:20px;
+  right:25%;
+  left:50%;
+  margin-left:-90px;
+}
+
+.HFO {
+  border-radius: 25px;
+}
+
+/*-----MEDIA QUERIES-----*/
+
+@media screen and (max-width: 430px) {
+    .link {
+        width: 250px;
+    }
+    button.btn.btn-info {
+      margin-top: -160px;
+    }
+    .tagline-design {
+      margin-top: -30px;
+    }
 }
